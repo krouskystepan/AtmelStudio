@@ -17,9 +17,9 @@ int main(void)
 	{
 		// Rozsviti LED
 		PORTA=0b11111111;
-		_delay_ms(10000); // wait
+		_delay_ms(1000); // wait
 	 // Vypne LED
 		PORTA=0b00000000;
-		_delay_ms(10000);
+		_delay_ms(1000);
 	}
 }
