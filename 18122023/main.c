@@ -27,7 +27,7 @@ int main(void)
 	while (1)
 	{
 		uint8_t i;
-		for (i = 0; i <= 13; i++)
+		for (i = 0; i <= 9; i++)
 		{
 			cislo(i);
 			_delay_ms(1000);
