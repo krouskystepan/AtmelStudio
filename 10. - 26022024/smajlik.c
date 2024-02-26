@@ -7,7 +7,6 @@
 
 #define F_CPU 1000000UL
 #include <avr/io.h>
-#include <stdbool.h>
 #include <util/delay.h>
 
 int main(void)
