@@ -35,10 +35,7 @@ int main(void)
 	sei(); // globalne vypine funkci HW preruseni
 		
 	while (1)
-	{
-		DDRB=0b01111111;
-		DDRC=0b00000100;
-		
+	{	
 		while (1)
 		{
 			for (int i = 0; i <= 10; i++)
