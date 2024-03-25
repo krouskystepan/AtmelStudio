@@ -37,23 +37,20 @@ int main(void)
 	
 	while (1)
 	{
-		while (1)
+		for (int i = 0; i <= 10; i++)
 		{
-			for (int i = 0; i <= 10; i++)
-			{
-				PORTC=0b00001101;
-				cislo(sec/10);
-				_delay_ms(10);
-				PORTC=0b00001110;
-				cislo(sec%10);
-				_delay_ms(10);
-				PORTC=0b00000111;
-				cislo(min/10);
-				_delay_ms(10);
-				PORTC=0b00001011;
-				cislo(min%10);
-				_delay_ms(10);
-			}
+			PORTC=0b00001101;
+			cislo(sec/10);
+			_delay_ms(10);
+			PORTC=0b00001110;
+			cislo(sec%10);
+			_delay_ms(10);
+			PORTC=0b00000111;
+			cislo(min/10);
+			_delay_ms(10);
+			PORTC=0b00001011;
+			cislo(min%10);
+			_delay_ms(10);
 		}
 	}
 }
